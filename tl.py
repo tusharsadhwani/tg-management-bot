@@ -15,7 +15,7 @@ def tl(bot, update):
         if len(msg_list) > 1:
             text += msg_list[1].strip().replace('&', '').replace('_', r'\_').replace('*', r'\*').replace('`', r'\`')
 
-    key = 'KEY-HERE'
+    key = defaults.tl_api_key
     url = f'https://translate.yandex.net/api/v1.5/tr.json/translate?key={key}&text={text}&lang=en'
 
     response = requests.get(url)
