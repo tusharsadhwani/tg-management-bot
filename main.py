@@ -29,7 +29,7 @@ def main():
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-    updater = Updater(token="698907268:AAGNhlX1Nkquxij-5QcBJ6R-R3t7l4M8q-0")
+    updater = Updater(token=defaults.token)
  
     dispatcher = updater.dispatcher
 
